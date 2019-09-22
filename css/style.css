@@ -1,0 +1,264 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, p, ul {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    font-family: Georgia, serif;
+    color: #252525;
+}
+
+img {
+	display: block;
+}
+
+
+
+.btn {
+	border: 3px solid #000;
+	padding: 10px 30px;
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+
+.btn:hover {
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn.btn-preto:hover {
+	color: #000;
+	border-color: #000;
+}
+
+
+/* Menu */
+
+.menu {
+    background: #252525;
+    padding: 20px 0;
+    
+}
+
+.menu-principal {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+ .menu-principal::after, .menu-principal::before { 
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a.menu-logo {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+a.menu-logo {
+	display: block;
+	float: left;
+    margin-left: 10px;
+}
+
+.menu-nav {
+    float: right;
+    margin-right: 10px;
+
+}
+
+.menu-nav li {
+    display: inline-block;
+}
+
+.menu-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;
+}
+a:hover {
+    color: yellow;
+}
+
+.menu-nav:hover {
+    color: yellow;
+}
+
+a:focus {
+    color: yellow;
+}
+
+/* introdução */
+
+.intro {
+    background: url("../img/intro2.jpg") no-repeat center center; 
+    background-size: cover;
+    padding: 54px 0; 
+    text-align: center;
+    color: #fff;
+} 
+    
+
+
+.intro h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.intro h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+.intro p {
+    font-style: italic;
+    font-size: 1.125em;   
+}
+
+/* sobre */
+
+.sobre {
+    padding: 60px 0;
+}
+
+p{
+    font-family: Arial, Tahoma, Verdana;
+    font-style: normal;
+}
+
+
+
+.sobre-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sobre-principal {
+    display: flex;
+}
+
+.sobre-container::after, .sobre-container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 2.25em; 
+    margin-bottom: 60px;
+}
+
+.sobre-item { 
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+.sobre-item2 { 
+    width: 460px;
+    float: center;
+    margin: 45px 10px;
+}
+
+.sobre-item2 p {
+    text-align: justify;
+}
+
+.historia {
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    text-align: justify;
+    margin: 20px auto;
+    max-width: 460px;
+    float: right;
+}
+
+.sobre-item img {
+    display: block;
+    max-width: 100%;
+
+}
+
+.sobre-item h3 {
+    font-size: 2.25em;
+    line-height: 1em;
+    background: #252525;
+    width: 220px;
+    color: #fff;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    top: -25px;
+    top: -25px;
+    position: relative; 
+}
+
+
+
+.sobre > p { /*p esta diretamente ligado ao sobre, caso mude alguma caracteristica de outro parágrafo*/
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 460px;
+
+}
+
+/* footer */
+
+.footer {
+    background: #252525;
+    padding: 25px 0;
+    color: #fff;
+}
+
+.footer-cont {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-cont::after, .footer-cont::before { 
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer p {
+    float: left;
+    margin: 6px 10px;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+.footer a {
+    float: right;
+    margin: 0 10px;
+    display: block;
+}
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Bosque - Rj - Contato</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/acervos.css">
+		<link rel="stylesheet" href="css/contato.css">
+		<link rel="stylesheet" href="css/responsivo.css">
+	</head>
+	<body>
+
+		<header class="menu">
+			<div class="menu-principal">
+				<a class="menu-logo" href="./index.html"> <h1>Bosque </h1> </a>
+				<nav class="menu-nav"> 
+					<ul>
+						<li> <a href="./index.html">Sobre</a> </li>
+						<li> <a href="./acervos.html">Acervos</a> </li>
+						<li> <a href="#contato">Contato</a> </li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="introducao-interna interna_contato" id="contato">
+			<div class="container">
+				<h1>Contato</h1>
+			</div>
+		</section>
+
+		<section class="contato container">
+			<div class="form">
+				<form id="form_orcamento" class="contato_form adc">
+					<label for="nome">Nome</label>
+					<input type="text" id="nome">
+					<label for="email">E-mail</label>
+					<input type="text" id="email">
+					<label for="telefone">Telefone</label>
+					<input type="text" id="telefone">
+					<label for="espec">Especificações</label>
+					<textarea id="espec"></textarea>
+					<button type="submit" class="btn btn-preto">Enviar</button>
+				</form>
+			</div>
+			<div class="contato_dados adc">
+				<h3>Dados</h3>
+				<span>Avenida das Américas, 6000 - Barra da Tijuca</span>
+				<span>Rio de Janeiro - RJ - Brasil</span>
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.facebook.com/amigosdobosquedabarra/" target="_blank"><img src="./img/redes/facebook.png"></a></li>
+					<li><a href="http://instagram.com" target="_blank"><img src="./img/redes/instagram.png"></a></li>
+					<li><a href="http://twitter.com" target="_blank"><img src="./img/redes/twitter.png"></a></li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="container contato_mapa contato_dados">
+			<h3 class="traco center">Localização</h3> 
+
+			<div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6539988506956!2d-43.37385108582218!3d-22.999747484964633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdbb3b8863c8f%3A0xbf23a4fe4f836c54!2sBosque%20da%20Barra!5e0!3m2!1spt-BR!2sbr!4v1569183547495!5m2!1spt-BR!2sbr" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+
+		</section>
+        
+        <script class="sobre-item" type="text/javascript">
+			dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+			monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+			now = new Date;
+            document.write ("Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   + " de "  +     now.getFullYear () + ".")
+			
+		</script>
+
+        <footer class="footer" id="footer">
+            <div class="footer-cont">
+                <p>Bianca, Bruno e Gislaine - RJ - © 2019</p>
+                <a class="menu-logo" href=""> <h1>Bosque </h1> </a>
+            </div>
+        </footer>
+
+	</body>
+</html>
