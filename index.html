@@ -25,6 +25,37 @@
         </header>
         <main class="intro">
             <h1>Bosque da Barra</h1>
+		
+		<script type='text/javascript'>
+                function iniciaRelogio(){
+                var data = new Date();
+                var hora = data.getHours();
+                var minuto = data.getMinutes();
+                var segundo = data.getSeconds();
+                // adiciona um zero na frente dos números menores que 10
+                minuto = checaHora(minuto);
+                segundo = checaHora(segundo);
+                document.getElementById('relogio').innerHTML = hora + ":" + minuto + ":" + segundo;
+                hora = setTimeout('iniciaRelogio()',500);
+                }
+                    function checaHora(i){
+                    if (i<10){
+                    i = "0" + i;
+                    }
+                    return i;
+                    }
+    
+                dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+                monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+                now = new Date;
+                document.write ("Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". ")
+                
+        </script>
+    </head>
+    <body onload="iniciaRelogio()">
+    <!-- relógio será mostrado na div abaixo -->
+    <div id="relogio"></div>
+
            
         </main>
 
